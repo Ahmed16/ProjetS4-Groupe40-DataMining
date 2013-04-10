@@ -49,5 +49,6 @@ public class DataBaseSpout extends BaseRichSpout{
 	public void declareOutputFields(OutputFieldsDeclarer declarer) {
 		declarer.declare(new Fields("stream_id"));
 		declarer.declare(new Fields("stream_name"));
+		declarer.declare(new Fields("view_count"));
 	}
 }

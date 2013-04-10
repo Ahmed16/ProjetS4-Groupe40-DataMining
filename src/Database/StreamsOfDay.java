@@ -6,6 +6,12 @@ import java.util.LinkedList;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+/**
+ * 
+ * 
+ * @author sbt
+ *
+ */
 
 public class StreamsOfDay {
 
