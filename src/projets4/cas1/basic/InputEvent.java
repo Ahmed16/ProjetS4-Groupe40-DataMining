@@ -1,6 +1,8 @@
 package projets4.cas1.basic;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Class used for simulate the input event
@@ -9,9 +11,9 @@ import java.util.ArrayList;
  */
 public class InputEvent {
 	
-	public long videoId;
+	public long streamId;
 	
-	public String videoName;
+	public String streamName;
 	
 	public long channelId;
 	
@@ -27,9 +29,11 @@ public class InputEvent {
 	
 	public ArrayList<String> tags;
 	
+	private List<Object> contents;
+	
 	public InputEvent(String[] inputs) {
-		this.videoId = Long.parseLong(inputs[0]);
-		this.videoName = inputs[1];
+		this.streamId = Long.parseLong(inputs[0]);
+		this.streamName = inputs[1];
 		this.channelId = Long.parseLong(inputs[2]);
 		this.channelName = inputs[3];
 		this.categoryId = Long.parseLong(inputs[4]);
@@ -37,6 +41,10 @@ public class InputEvent {
 		this.uploaderId = Long.parseLong(inputs[6]);
 		this.uploaderName = inputs[7];
 		// todo: tags
+	}
+	
+	public List<Object> getContents(){
+		return contents;
 	}
 	
 }
